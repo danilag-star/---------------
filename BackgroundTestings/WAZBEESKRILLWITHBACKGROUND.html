@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=600" name="viewport"/>
+<meta name="x-apple-disable-message-reformatting"/>
+<!-- ==========================================================
+     EASY EDITING GUIDE
+
+     MAIN COLORS — use Find & Replace to change them everywhere:
+
+     OUTER BACKGROUND:   #000000
+     EMAIL PANEL BASE:   #0c003e
+     DARK PURPLE:        #2f0061
+     BUTTON PURPLE:      #6d1e9e
+     LIGHT PURPLE:       #cda3fa
+     LIGHT LAVENDER:     #d0c5fc
+     WHITE TEXT:         #fafafa
+     LIGHT TEXT:         #d9d9d9
+     GOLD/YELLOW:        #ffcb00
+
+     MAIN SECTIONS:
+     1. LOGO
+     2. HERO HEADLINE
+     3. €10 EXTRA BONUS CARD
+     4. FAST PAYOUTS
+     5. EASY DEPOSITS / SECURE PLAY
+     6. CLAIM €10 BONUS CTA
+     7. FOOTER
+
+     IMPORTANT:
+     - Keep table structure for email compatibility.
+     - Change text directly between HTML tags.
+     - Change links inside href="...".
+     - Change colors using Find & Replace on the hex codes above.
+     ========================================================== -->
+<title>Wazbee – Transparency Added</title>
+<style type="text/css">
+  html, body {
+    margin:0 !important;
+    padding:0 !important;
+    width:100% !important;
+    min-width:600px !important;
+    -webkit-text-size-adjust:100% !important;
+    -ms-text-size-adjust:100% !important;
+  }
+  body, table, td, p, a {
+    margin:0;
+    padding:0;
+    font-family:'Trebuchet MS', Helvetica, Arial, sans-serif !important;
+  }
+  table {
+    border-collapse:collapse;
+    border-spacing:0;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+  }
+  img {
+    border:0;
+    display:block;
+    line-height:0;
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode:bicubic;
+  }
+
+  body {
+    background-color:#000000 !important;
+    background-image:none !important;
+  }
+
+  .outer-wrapper {
+    width:100% !important;
+    background-color:#000000 !important;
+    background-image:none !important;
+  }
+
+  .email-container {
+    width:600px !important;
+    min-width:600px !important;
+    max-width:600px !important;
+    margin:0 auto !important;
+  }
+
+  .email-background {
+    background-color:transparent !important;
+    background-image:url('https://cdn.playasballs.com/wazbee/emails/WazbeeBackgroundSkrill_.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:top center !important;
+    background-size:cover !important;
+  }
+
+  .hero-card {
+    width:540px !important;
+    max-width:540px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    background-color:transparent !important;
+  }
+
+  .bonus-card {
+    width:310px !important;
+    max-width:310px !important;
+  }
+
+  .info-cards-wrap {
+    width:540px !important;
+    max-width:540px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .info-card {
+    width:100% !important;
+    max-width:540px !important;
+  }
+
+  .hero-top {
+    font-size:44px !important;
+    line-height:46px !important;
+    font-weight:900 !important;
+    color:#cda3fa !important;
+    letter-spacing:0 !important;
+    text-transform:uppercase !important;
+  }
+
+  .hero-main {
+    font-size:44px !important;
+    line-height:46px !important;
+    font-weight:900 !important;
+    color:#cda3fa !important;
+    letter-spacing:0 !important;
+    text-transform:uppercase !important;
+  }
+
+  .hero-bottom {
+    font-size:13px !important;
+    line-height:18px !important;
+    font-weight:normal !important;
+    color:#d9d9d9;
+    letter-spacing:1px !important;
+    text-transform:uppercase !important;
+  }
+
+  .info-card-title {
+    font-size:18px !important;
+    line-height:21px !important;
+    font-weight:900 !important;
+    color:#fafafa !important;
+    text-transform:uppercase !important;
+  }
+
+  .info-card-copy {
+    font-size:13px !important;
+    line-height:18px !important;
+    color:#d9d9d9 !important;
+  }
+
+  .info-card-link {
+    font-size:12px !important;
+    line-height:16px !important;
+    font-weight:bold !important;
+    color:#cda3fa !important;
+    text-decoration:none !important;
+    text-transform:uppercase !important;
+  }
+
+  .info-card-arrow {
+    font-size:34px !important;
+    line-height:34px !important;
+    font-weight:bold !important;
+    color:#cda3fa !important;
+  }
+
+  u + .body .email-container,
+  #MessageViewBody .email-container {
+    width:600px !important;
+    min-width:600px !important;
+    max-width:600px !important;
+  }
+
+  .email-container,
+  .info-card {
+    border-radius:8px !important;
+  }
+
+  .bonus-option-card,
+  .info-card,
+  .email-container {
+    border-radius:8px !important;
+    border-collapse:separate !important;
+    overflow:hidden !important;
+  }
+
+  .bonus-option-card td[bgcolor="#6d1e9e"],
+  td[bgcolor="#6d1e9e"] {
+    border-radius:8px !important;
+    overflow:hidden !important;
+  }
+
+  .bonus-option-card td[bgcolor="#6d1e9e"] a,
+  td[bgcolor="#6d1e9e"] a {
+    border-radius:8px !important;
+  }
+
+  .bonus-option-card table[role="presentation"] td[bgcolor="#6d1e9e"] {
+    border-radius:8px !important;
+    overflow:hidden !important;
+    border:1px solid #ffcb00 !important;
+  }
+
+  .bonus-option-card table[role="presentation"] td[bgcolor="#6d1e9e"] a {
+    border-radius:8px !important;
+  }
+
+  .bonus-option-card table[role="presentation"] td.plus-symbol[bgcolor="#6d1e9e"] {
+    border:none !important;
+    box-shadow:none !important;
+  }
+
+  td.plus-symbol[bgcolor="#6d1e9e"] {
+    border-radius:50% !important;
+    border:none !important;
+    overflow:hidden !important;
+    box-shadow:none !important;
+  }
+
+  td.plus-symbol[bgcolor="#6d1e9e"]{
+    width:28px !important;
+    height:28px !important;
+    line-height:28px !important;
+    display:block !important;
+    border-radius:999px !important;
+    border:none !important;
+    overflow:hidden !important;
+    box-shadow:none !important;
+  }
+  td.plus-symbol[bgcolor="#6d1e9e"] table,
+  td[align="center"] > table[role="presentation"][width="28"]{
+    border-radius:999px !important;
+    overflow:hidden !important;
+    border-collapse:separate !important;
+    border-spacing:0 !important;
+  }
+
+  .bonus-option-card table[role="presentation"] td[bgcolor="#6d1e9e"] {
+    border:2px solid #ffcb00 !important;
+  }
+
+  a.bonus-card-link {
+    display:block !important;
+    width:260px !important;
+    max-width:260px !important;
+    text-decoration:none !important;
+    color:inherit !important;
+    border-radius:8px !important;
+  }
+
+  .hero-card{
+    width:540px !important;
+    max-width:540px !important;
+    margin-left:0 !important;
+    margin-right:auto !important;
+    background-color:transparent !important;
+    border:2px solid #cda3fa !important;
+    border-radius:8px !important;
+    border-collapse:separate !important;
+    overflow:hidden !important;
+  }
+
+  .hero-card {
+    background-color:#0c003e !important;
+  }
+
+
+  /* Added glass transparency to main Wazbee blocks */
+  .wazbee-glass-card,
+  .wazbee-glass-card > tbody > tr > td {
+    background-color:rgba(12, 0, 62, 0.50) !important;
+    background-image:none !important;
+  }
+
+  .wazbee-glass-card {
+    border-collapse:separate !important;
+    overflow:hidden !important;
+  }
+
+  .wazbee-glass-card td[bgcolor="#6d1e9e"] {
+    background-color:#6d1e9e !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .wazbee-glass-card,
+    .wazbee-glass-card > tbody > tr > td {
+      background-color:rgba(12, 0, 62, 0.50) !important;
+      background-image:none !important;
+    }
+  }
+
+  u + .body .wazbee-glass-card,
+  u + .body .wazbee-glass-card > tbody > tr > td,
+  #MessageViewBody .wazbee-glass-card,
+  #MessageViewBody .wazbee-glass-card > tbody > tr > td {
+    background-color:rgba(12, 0, 62, 0.50) !important;
+    background-image:none !important;
+  }
+</style>
+</head>
+<body class="body" style="margin:0; padding:0; background-color:#000000;">
+<table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="outer-wrapper" role="presentation" style="width:100%; background-color:#000000;" width="100%">
+<tr>
+<td align="center" style="padding:20px 0; background-color:transparent;" valign="top">
+<!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+        <v:fill type="frame" src="https://cdn.playasballs.com/wazbee/emails/WazbeeBackgroundSkrill_.png"/>
+        <v:textbox inset="0,0,0,0">
+      <![endif]-->
+<table background="https://cdn.playasballs.com/wazbee/emails/WazbeeBackgroundSkrill_.png" border="0" cellpadding="0" cellspacing="0" class="email-container email-background" role="presentation" style="width:600px; min-width:600px; max-width:600px; margin:0 auto; background-color:transparent; background-image:url('https://cdn.playasballs.com/wazbee/emails/WazbeeBackgroundSkrill_.png'); background-repeat:no-repeat; background-position:top center; background-size:cover; border-radius:8px; border-collapse:separate; overflow:hidden;" width="600">
+<!-- ==========================================================
+             1. LOGO
+             Change the image URL in src="..."
+             Change the logo link in href="..."
+             ========================================================== -->
+<tr>
+<td align="center" style="padding:14px 20px 18px 20px; background-color:transparent;" valign="top">
+<a href="https://wazbee88.casino/" style="text-decoration:none;" target="_blank">
+<img alt="Wazbee Logo" src="https://cdn.playasballs.com/wazbee/Logo/LogoMail.png"/>
+</a>
+</td>
+</tr>
+<!-- ==========================================================
+             2. HERO HEADLINE
+             Edit headline text and colors here.
+             ========================================================== -->
+<tr>
+<td align="left" style="padding:0 0 24px 18px; background-color:transparent;" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:540px; max-width:540px; margin:0; background-color:transparent;" width="540">
+<tr>
+<td align="center" style="padding:0 0 12px 0; background-color:transparent;">
+</td>
+</tr>
+<tr>
+<td align="left" style="padding:0; background-color:transparent;">
+<a aria-label="Claim €10 Bonus" href="https://wazbee88.casino/(aside:rewards/bonus-promotions)" style="display:block; width:310px; max-width:310px;
+                    text-decoration:none; color:inherit; border-radius:8px;" target="_blank">
+<table border="0" cellpadding="0" cellspacing="0" class="wazbee-glass-card" role="presentation" style="width:310px; max-width:310px; 
+                          border:2px solid #cda3fa; border-radius:8px;
+                          border-collapse:separate; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;" width="310">
+<tr>
+<td align="center" style="padding:18px 16px 14px 16px; 
+                           border-radius:8px 8px 0 0; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;">
+<div style="font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+                              font-size:78px; line-height:74px; font-weight:900;
+                              color:#cda3fa; letter-spacing:-3px;">
+                    €10
+                  </div>
+<div style="margin-top:4px; font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+                              font-size:24px; line-height:28px; font-weight:900;
+                              color:#fafafa; text-transform:uppercase;">
+                    EXTRA BONUS
+                  </div>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin:12px 0 4px 0;" width="100%">
+<tr>
+<td style="font-size:0; line-height:0; border-top:1px solid #6d1e9e;" valign="middle" width="40%"> </td>
+<td align="center" style="font-size:14px; line-height:16px; color:#ffcb00; font-weight:bold; background-color:rgba(12, 0, 62, 0.50); background-image:none;" valign="middle" width="20%">
+                        ✦
+                      </td>
+<td style="font-size:0; line-height:0; border-top:1px solid #6d1e9e;" valign="middle" width="40%"> </td>
+</tr>
+</table>
+<div style="margin-top:8px; font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+                              font-size:13px; line-height:18px; color:#d9d9d9;">
+                    A Little Extra From Wazbee
+                  </div>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding:10px 12px 12px 12px; 
+                           border-radius:0 0 8px 8px; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; border-radius:8px;
+                                border-collapse:separate; overflow:hidden;" width="100%">
+<tr>
+<td align="center" bgcolor="#6d1e9e" style="background-color:#6d1e9e; border:2px solid #ffcb00;
+                                 border-radius:8px; overflow:hidden; mso-padding-alt:13px 16px;">
+<span style="display:block; padding:13px 16px;
+                                     font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+                                     font-size:18px; line-height:22px; font-weight:bold;
+                                     color:#ffcb00; text-decoration:none;
+                                     text-transform:uppercase; border-radius:8px;">
+                          CLAIM €10 BONUS  ›
+                        </span>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- ==========================================================
+             3. BONUS PROMO CARD
+             Edit percentage, maximum amount, free spins, game name,
+             CTA text and CTA link in this section.
+             ========================================================== -->
+<tr>
+<td align="center" style="padding:10px 30px 18px 30px; background-color:transparent;" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="hero-card wazbee-glass-card" role="presentation" style="width:540px; max-width:540px; margin:0 auto;  border:2px solid #cda3fa; border-radius:8px; border-collapse:separate; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;" width="540">
+<tr>
+<td align="center" style="padding:18px 18px 16px 18px;  border-radius:8px; text-align:center; background-color:rgba(12, 0, 62, 0.50); background-image:none;">
+<p class="hero-top" style="margin:0; font-size:44px; line-height:46px; font-weight:900; color:#cda3fa; letter-spacing:0; text-transform:uppercase;"></p>
+<p class="hero-main" style="margin:2px 0 8px 0; font-size:44px; line-height:46px; font-weight:900; color:#cda3fa; letter-spacing:0; text-transform:uppercase;">MORE SPINS MORE FUN</p>
+<p class="hero-bottom" style="margin:0; font-size:13px; line-height:18px; font-weight:normal; color:#d9d9d9; letter-spacing:0; text-transform:none;">Enjoy €10 Extra From Wazbee</p>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin:8px auto 0 auto; width:100%;" width="100%">
+<tr>
+<td style="font-size:0; line-height:0; border-top:2px solid #ffcb00; ; background-image:none;" valign="middle" width="38%"> </td>
+<td align="center" style="font-size:14px; line-height:14px; color:#ffcb00; font-weight:bold; padding:0 6px; ; background-image:none;" valign="middle" width="24%">⬢</td>
+<td style="font-size:0; line-height:0; border-top:2px solid #ffcb00; ; background-image:none;" valign="middle" width="38%"> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- ==========================================================
+             4–5. BONUS INFORMATION BLOCKS
+             Edit deposit details, game names and bonus explanation text here.
+             ========================================================== -->
+<tr>
+<td align="center" style="padding:0 30px 10px 30px; background-color:transparent;" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="info-cards-wrap" role="presentation" style="width:540px; max-width:540px; margin:0 auto; background-color:transparent;" width="540">
+<tr>
+<td align="center" style="padding:0;" valign="top" width="170">
+<table border="0" cellpadding="0" cellspacing="0" class="wazbee-glass-card" role="presentation" style="width:170px;  border:2px solid #cda3fa;
+                        border-radius:8px; border-collapse:separate; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;" width="170">
+<tr>
+<td align="center" style="padding:14px 10px;  border-radius:8px; background-color:rgba(12, 0, 62, 0.50); background-image:none;">
+<div style="font-size:20px; line-height:22px; color:#ffcb00; margin-bottom:6px;">⚡</div>
+<div style="font-size:13px; line-height:17px; font-weight:bold;
+                            color:#fafafa; text-transform:uppercase;">
+                  FAST PAYOUTS
+                </div>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0; line-height:0;" width="15"> </td>
+<td align="center" style="padding:0;" valign="top" width="170">
+<table border="0" cellpadding="0" cellspacing="0" class="wazbee-glass-card" role="presentation" style="width:170px;  border:2px solid #cda3fa;
+                        border-radius:8px; border-collapse:separate; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;" width="170">
+<tr>
+<td align="center" style="padding:14px 10px;  border-radius:8px; background-color:rgba(12, 0, 62, 0.50); background-image:none;">
+<div style="font-size:20px; line-height:22px; color:#ffcb00; margin-bottom:6px;">◆</div>
+<div style="font-size:13px; line-height:17px; font-weight:bold;
+                            color:#fafafa; text-transform:uppercase;">
+                  EASY DEPOSITS
+                </div>
+</td>
+</tr>
+</table>
+</td>
+<td style="font-size:0; line-height:0;" width="15"> </td>
+<td align="center" style="padding:0;" valign="top" width="170">
+<table border="0" cellpadding="0" cellspacing="0" class="wazbee-glass-card" role="presentation" style="width:170px;  border:2px solid #cda3fa;
+                        border-radius:8px; border-collapse:separate; overflow:hidden; background-color:rgba(12, 0, 62, 0.50); background-image:none;" width="170">
+<tr>
+<td align="center" style="padding:14px 10px;  border-radius:8px; background-color:rgba(12, 0, 62, 0.50); background-image:none;">
+<div style="font-size:20px; line-height:22px; color:#ffcb00; margin-bottom:6px;">✓</div>
+<div style="font-size:13px; line-height:17px; font-weight:bold;
+                            color:#fafafa; text-transform:uppercase;">
+                  SECURE PLAY
+                </div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Footer -->
+<tr>
+<td align="center" bgcolor="#160023" class="footer-padding" style="padding:20px 28px 26px 28px; background-color:#160023; border-top:1px solid #3D1760; border-radius:0px 0px 0 0; overflow:hidden;">
+<p style="margin:0; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:11px; line-height:16px; color:#b9b9b9; text-align:center;"><a href="{{ system.url.unsubscribe }}" style="color:#d687ff; text-decoration:underline; font-weight:bold;">Adjust Preferences</a></p>
+<p style="margin:10px 0 0 0; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:10px; line-height:15px; color:#8f8f8f; text-align:center;">The Website is owned by JER-TEAM N.V., registration no.160979, registered address is at Schottegatweg Oost Unit 1-9, Bon Bini Business Center, Curacao, license no. OGL/2024/600/0262. All payment procedures are operated by JER-TEAM LIMITED, Avlonos 1, MARIA HOUSE, 1075, Nicosia, Cyprus.</p>
+<p style="margin:10px 0 0 0; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:10px; line-height:15px; color:#8f8f8f; text-align:center;">© 2026 WazBee. All rights reserved.</p>
+</td>
+</tr>
+<!-- Bottom honey accent -->
+<tr>
+<td bgcolor="#ffc400" height="10" style="height:10px; line-height:10px; font-size:0; background-color:#ffc400; border-radius:8px; overflow:hidden;"> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

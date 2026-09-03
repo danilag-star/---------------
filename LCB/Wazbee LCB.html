@@ -1,0 +1,389 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta name="x-apple-disable-message-reformatting">
+			<meta name="color-scheme" content="light only">
+			<meta name="supported-color-schemes" content="light">
+				<title>Wazbee</title>
+
+			<style type="text/css">
+			/* RESET */
+			:root {
+			color-scheme: light only;
+			supported-color-schemes: light;
+			}
+
+			html, body {
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+			-webkit-text-size-adjust: 100% !important;
+			-ms-text-size-adjust: 100% !important;
+			}
+
+			body, table, td, p {
+			margin: 0;
+			padding: 0;
+			font-family: Verdana, Arial, sans-serif !important;
+			}
+
+			table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			}
+
+			img {
+			border: 0;
+			display: block;
+			line-height: 0;
+			outline: none;
+			text-decoration: none;
+			-ms-interpolation-mode: bicubic;
+			}
+
+			a {
+			text-decoration: none;
+			}
+
+			.email-container {
+			width: 600px;
+			max-width: 600px;
+			border-radius: 8px !important;
+			overflow: hidden !important;
+			}
+
+			.email-canvas {
+			background-color: #f3eee6 !important;
+			}
+
+			.email-shell {
+			background-color: #51265f !important;
+			}
+
+			.dark-section {
+			background-color: #51265f !important;
+			}
+
+			.light-text {
+			color: #fff7e8 !important;
+			}
+
+			.supporting-text {
+			color: #e7d9f2 !important;
+			}
+
+			.footer-text {
+			color: #cbb9dc !important;
+			}
+
+			.benefit-card {
+			background-color: #fff1c7 !important;
+			border: 1.5px solid #dca52b !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			overflow: hidden !important;
+			}
+
+			.benefit-text {
+			color: #2b1705 !important;
+			}
+
+			.steps-panel {
+			background-color: #391847 !important;
+			border: 1px solid #e89a35 !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			}
+
+			.step-card {
+			background-color: #653272 !important;
+			border: 1px solid #7c4387 !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			}
+
+			.step-text {
+			color: #fff7e8 !important;
+			}
+
+			.cta-cell {
+			background-color: #ff7754 !important;
+			border-radius: 8px !important;
+			}
+
+			.cta-button {
+			border: 2px solid #ffbd4a !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			overflow: hidden !important;
+			}
+
+			@media (prefers-color-scheme: dark) {
+			.email-canvas {
+			background-color: #f3eee6 !important;
+			}
+
+			.email-shell {
+			background-color: #51265f !important;
+			}
+
+			.dark-section {
+			background-color: #51265f !important;
+			}
+
+			.light-text {
+			color: #fff7e8 !important;
+			}
+
+			.supporting-text {
+			color: #e7d9f2 !important;
+			}
+
+			.footer-text {
+			color: #cbb9dc !important;
+			}
+
+			.benefit-card {
+			background-color: #fff1c7 !important;
+			border: 1.5px solid #dca52b !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			overflow: hidden !important;
+			}
+
+			.benefit-text {
+			color: #2b1705 !important;
+			}
+
+			.steps-panel {
+			background-color: #391847 !important;
+			border: 1px solid #e89a35 !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			}
+
+			.step-card {
+			background-color: #653272 !important;
+			border: 1px solid #7c4387 !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			}
+
+			.step-text {
+			color: #fff7e8 !important;
+			}
+
+			.cta-cell {
+			background-color: #ff7754 !important;
+			border-radius: 8px !important;
+			}
+
+			.cta-button {
+			border: 2px solid #ffbd4a !important;
+			border-radius: 8px !important;
+			border-collapse: separate !important;
+			border-spacing: 0 !important;
+			overflow: hidden !important;
+			}
+			}
+
+			@media only screen and (max-width: 620px) {
+			.email-container,
+			.hero-image {
+			width: 100% !important;
+			height: auto !important;
+			}
+
+			.mobile-padding {
+			padding-left: 18px !important;
+			padding-right: 18px !important;
+			}
+			}
+			</style>
+		</head>
+	<body class="email-canvas" bgcolor="#f3eee6" style="background-color:#f3eee6;">
+		<!-- Main email setting for 600px width -->
+		<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f3eee6" class="email-canvas" style="background-color:#f3eee6;">
+      		<tr>
+	        		<td align="center" bgcolor="#f3eee6" class="email-canvas" style="background-color:#f3eee6;">
+					<!-- Email settings (colors and other options) -->
+					<table role="presentation" width="600" border="0" cellpadding="0" cellspacing="0" class="email-container email-shell" bgcolor="#51265f"
+						style="max-width: 600px; 
+						font-family: Verdana, sans-serif !important;
+						border:1px solid #d6a640;
+						border-radius:8px;
+						overflow:hidden;
+						box-sizing:border-box;
+						background-color:#51265f;" >
+						<!-- Top image -->
+						<tr>
+              				<td>
+								<a href="https://lcb.org/casinos/wazbee-casino" target="_blank">
+									<img src="https://cdn.playasballs.com/wazbee/emails/LCB_NEW_.png"
+									alt="Wazbee"
+									width="594" class="hero-image" style="width:100%; max-width:594px; height:auto;">
+								</a>
+							</td>
+						</tr>
+						<!-- Header -->
+						<tr>
+							<td bgcolor="#51265f" class="dark-section" style="padding:12px 5px 8px 5px; background-color:#51265f;">
+								<h1 class="light-text" style="text-align:center; margin:0; color:#fff7e8; font-weight:bold;
+									text-transform:uppercase; font-size:35px;">
+									Get €5 to play at Wazbee!
+								</h1>
+								<table role="presentation" width="72" border="0" cellspacing="0" cellpadding="0" align="center" style="margin:10px auto 0 auto;">
+									<tr>
+										<td height="2" bgcolor="#ffc83d" style="height:2px; line-height:2px; font-size:0; background-color:#ffc83d;"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- Bonus -->
+						<tr>
+							<td bgcolor="#51265f" class="mobile-padding dark-section" style="padding:0 3.5% 15px 3.5%; text-align:center; font-weight:normal; background-color:#51265f;">
+								<span class="supporting-text" style="font-size:20px; line-height:28px; color:#e7d9f2 !important;">
+									Complete the steps below to claim your €5 Wazbee bonus.</span>
+							</td>
+						</tr>
+						<!-- How to claim -->
+						<tr>
+							<td align="center" bgcolor="#51265f" class="mobile-padding dark-section" style="padding:0 28px 10px 28px; background-color:#51265f;">
+								<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+									<tr>
+										<td width="34%" valign="middle">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td height="1" bgcolor="#d99526" style="height:1px; line-height:1px; font-size:0; background-color:#d99526;"></td></tr></table>
+										</td>
+										<td width="32%" align="center" style="padding:0 12px; color:#f29a3f; font-family:Arial,Helvetica,sans-serif; font-size:13px; line-height:18px; font-weight:bold; text-transform:uppercase; letter-spacing:1.4px; white-space:nowrap;">
+											How to claim
+										</td>
+										<td width="34%" valign="middle">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td height="1" bgcolor="#d99526" style="height:1px; line-height:1px; font-size:0; background-color:#d99526;"></td></tr></table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#51265f" class="mobile-padding dark-section" style="padding:0 28px 24px 28px; background-color:#51265f;">
+								<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#391847" class="steps-panel" style="background-color:#391847; border:1px solid #e89a35; border-radius:8px; border-collapse:separate; border-spacing:0;">
+									<tr>
+										<td style="padding:12px 12px 10px 12px;">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#653272" class="step-card" style="border:1px solid #7c4387; border-radius:8px; border-collapse:separate; border-spacing:0; background-color:#653272;">
+												<tr><td width="58" align="center" valign="middle" style="padding:14px 0;"><table role="presentation" width="32" height="32" border="0" cellspacing="0" cellpadding="0"><tr><td width="32" height="32" align="center" valign="middle" bgcolor="#f29a3f" style="background-color:#f29a3f; color:#391847; font-size:15px; line-height:32px; font-weight:bold; border-radius:8px;">01</td></tr></table></td><td class="step-text" style="padding:14px 14px 14px 0; color:#fff7e8; font-size:17px; line-height:24px;">Log in to your LCB account, leave a <strong>positive review</strong> and give Wazbee a <strong>positive rating</strong>.</td></tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td style="padding:0 12px 10px 12px;">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#653272" class="step-card" style="border:1px solid #7c4387; border-radius:8px; border-collapse:separate; border-spacing:0; background-color:#653272;">
+												<tr><td width="58" align="center" valign="middle" style="padding:14px 0;"><table role="presentation" width="32" height="32" border="0" cellspacing="0" cellpadding="0"><tr><td width="32" height="32" align="center" valign="middle" bgcolor="#f29a3f" style="background-color:#f29a3f; color:#391847; font-size:15px; line-height:32px; font-weight:bold; border-radius:8px;">02</td></tr></table></td><td class="step-text" style="padding:14px 14px 14px 0; color:#fff7e8; font-size:17px; line-height:24px;">Log in to your Wazbee account and send Wazbee Support a screenshot showing your <strong>LCB account email, review and rating</strong>.</td></tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td style="padding:0 12px 12px 12px;">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#653272" class="step-card" style="border:1px solid #7c4387; border-radius:8px; border-collapse:separate; border-spacing:0; background-color:#653272;">
+												<tr><td width="58" align="center" valign="middle" style="padding:14px 0;"><table role="presentation" width="32" height="32" border="0" cellspacing="0" cellpadding="0"><tr><td width="32" height="32" align="center" valign="middle" bgcolor="#f29a3f" style="background-color:#f29a3f; color:#391847; font-size:15px; line-height:32px; font-weight:bold; border-radius:8px;">03</td></tr></table></td><td class="step-text" style="padding:14px 14px 14px 0; color:#fff7e8; font-size:17px; line-height:24px;">Receive <strong style="color:#ffd45a;">€5 in free play money</strong> in your Wazbee balance.</td></tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- LCB extra -->
+						<tr>
+							<td align="center" bgcolor="#51265f" class="mobile-padding dark-section" style="padding:0 28px 12px 28px; background-color:#51265f;">
+								<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#391847" style="border:1px solid #e89a35; border-radius:8px; border-collapse:separate; background-color:#391847;">
+									<tr><td align="center" style="padding:10px 14px 5px 14px; color:#f29a3f; font-size:13px; line-height:18px; font-weight:bold; text-transform:uppercase; letter-spacing:1px;">Extra for LCB players</td></tr>
+									<tr><td align="center" class="step-text" style="padding:0 18px 14px 18px; color:#fff7e8; font-size:17px; line-height:25px;">Deposit at Wazbee and claim a <strong style="color:#ffd45a;">$3 Chip Reward</strong> to use directly in the <strong style="color:#ffd45a;">LCB Shop</strong>.</td></tr>
+								</table>
+							</td>
+						</tr>
+						<!-- Button -->
+						<tr>
+							<td align="center" bgcolor="#51265f" class="dark-section" style="padding:5px 0 25px 0; background-color:#51265f;">
+								<table role="presentation" width="300" border="0" cellspacing="0" cellpadding="0" align="center" class="cta-button" style="border:2px solid #ffbd4a; border-radius:8px; border-collapse:separate; border-spacing:0; overflow:hidden;">
+									<tr>
+										<td align="center" bgcolor="#ff7754" class="cta-cell" style="background-color:#ff7754; border-radius:8px; mso-padding-alt:15px 10px;">
+											<a href="https://lcb.org/casinos/wazbee-casino" target="_blank"
+												style="display:block; padding:15px 10px; border-radius:8px; color:#fff7e8; font-family:Verdana,Arial,sans-serif; font-size:20px; line-height:24px; font-weight:bold; text-decoration:none; text-transform:uppercase; text-align:center;">
+												Visit Wazbee on LCB
+											</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#51265f" class="dark-section" style="padding:0 28px 18px 28px; background-color:#51265f;">
+								<p class="footer-text" style="margin:0; color:#cbb9dc; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:18px; font-style:italic; text-align:center;">
+									Bonus terms: 15x wagering requirement. Maximum win: €50.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" bgcolor="#51265f" class="dark-section" style="padding:0 28px 14px 28px; background-color:#51265f;">
+								<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td width="46%" valign="middle">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td height="1" bgcolor="#9d681a" style="height:1px; line-height:1px; font-size:0; background-color:#9d681a;"></td></tr></table>
+										</td>
+										<td width="8%" align="center" valign="middle" style="color:#d99526; font-size:8px; line-height:8px;">•</td>
+										<td width="46%" valign="middle">
+											<table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td height="1" bgcolor="#9d681a" style="height:1px; line-height:1px; font-size:0; background-color:#9d681a;"></td></tr></table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!-- Social media and rediraction -->
+						<tr>
+							<td bgcolor="#51265f" class="dark-section" style="padding-bottom:0; background-color:#51265f;">
+								<h3 class="supporting-text" style="text-align:center; font-size:12px; color:#e7d9f2;">Follow us</h3>
+							</td>
+						</tr>
+						<tr>				
+							<td align="center" bgcolor="#51265f" class="dark-section" style="background-color:#51265f;">
+								<table>			
+									<tbody>		
+										<tr>	
+											<td><a href="https://www.facebook.com/share/1D3CaMrXE6/" target="_blank"><img alt="Facebook" src="https://cdn.playasballs.com/wazbee/emails/fb.png" width="32" height="32" style="padding:5px 10px;"/> </a></td>
+											<td><a href="https://www.instagram.com/wazbee.casino?igsh=czUxOXlkZzc4bmc2" target="_blank"><img alt="Instagram" src="https://cdn.playasballs.com/wazbee/emails/inst.png" width="32" height="32" style="padding:5px 10px;"/> </a></td>
+											<td><a href="https://t.me/+IAwggsYhSctmYTI8" target="_blank"><img alt="Telegram" src="https://cdn.chipychapa.com//welle/Emails/Social_media/Telegram.png" width="32" height="32" style="padding:5px 10px;"/> </a></td>
+										</tr>	
+									</tbody>		
+								</table>			
+							</td>			
+						</tr>			
+						<!-- The footer always stay's unchanged -->
+						<!-- Unsubscribe button -->
+						<tr>
+							<td bgcolor="#51265f" class="dark-section" style="background-color:#51265f;">
+								<div class="module footer-text" data-muid="4e838cf3-9892-4a6d-94d6-170e474d21e5" data-role="module-unsubscribe" data-type="unsubscribe" role="module" style="color:#cbb9dc; font-size:11px; line-height:20px; padding:10px 0 1px 0; text-align:center;">
+									<p style="font-family:verdana,geneva,sans-serif; font-size:12px; line-height:20px;"><a class="Unsubscribe--unsubscribeLink zzzzzzz footer-text" href="{{ system.url.unsubscribe }}" style="color:#cbb9dc; text-decoration:underline;" target="_blank">Adjust Preferences</a></p>
+								</div>
+							</td>
+						</tr>
+						<!-- Copyright -->
+						<tr>
+							<td bgcolor="#51265f" class="dark-section footer-text" style="background-color:#51265f; text-align:center; font-size:10px; line-height:16px; color:#cbb9dc; padding:5px 23px 40px 23px;">
+								<p style="margin: 0; margin-bottom: 15px;">The Website is owned by JER-TEAM N.V., registration no.160979, registered address is at Schottegatweg Oost Unit 1-9, Bon Bini Business Center, Curacao, license no. OGL/2024/600/0262. All payment procedures are operated by JER-TEAM LIMITED Avlonos 1, MARIA HOUSE, 1075, Nicosia, Cyprus</p>
+								<p style="margin: 0;">© 2026 Wazbee. All rights reserved.</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>			
+		</table>
+	</body>
+</html>

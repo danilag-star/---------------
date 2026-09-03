@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=600" name="viewport"/>
+<meta name="x-apple-disable-message-reformatting"/>
+<!-- ==========================================================
+     EASY EDITING GUIDE
+
+     MAIN COLORS — use Find & Replace to change them everywhere:
+
+     OUTER BACKGROUND:   #000000
+     EMAIL PANEL BASE:   #0c003e
+     DARK PURPLE:        #2f0061
+     BUTTON PURPLE:      #6d1e9e
+     LIGHT PURPLE:       #cda3fa
+     LIGHT LAVENDER:     #d0c5fc
+     WHITE TEXT:         #f0f1f4
+     LIGHT TEXT:         #d9d9d9
+     GOLD/YELLOW:        #ffcb00
+
+     MAIN SECTIONS:
+     1. LOGO
+     2. HERO HEADLINE
+     3. BONUS CARD
+     4. THOUSANDS OF GAMES CARD
+     5. SAFE. FAST. TRUSTED. CARD
+     6. MAIN CTA
+     7. FOOTER
+
+     IMPORTANT:
+     - Keep table structure for email compatibility.
+     - Change text directly between HTML tags.
+     - Change links inside href="...".
+     - Change colors using Find & Replace on the hex codes above.
+     ========================================================== -->
+<title>Pledoo – Choose Your Bonus</title>
+<style type="text/css">
+  /* ==========================================================
+     ALL TEXT COLORS ARE NOW EDITABLE
+
+     There are no CSS-level "color:" rules in this style block.
+     Every visible text color is controlled by the inline style
+     attached directly to that text element.
+
+     Example:
+       style="... color:#f0f1f4; ..."
+
+     Change that hex value beside any exact text element.
+     ========================================================== */
+
+  html, body {
+    margin:0 !important;
+    padding:0 !important;
+    width:100% !important;
+    min-width:600px !important;
+    -webkit-text-size-adjust:100% !important;
+    -ms-text-size-adjust:100% !important;
+  }
+  body, table, td, p, a {
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif !important;
+  }
+  table {
+    border-collapse:collapse;
+    border-spacing:0;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+  }
+  img {
+    border:0;
+    display:block;
+    line-height:0;
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode:bicubic;
+  }
+
+  body {
+    background-color:#000000 !important;
+    background-image:none !important;
+  }
+
+  .outer-wrapper {
+    width:100% !important;
+    background-color:#000000 !important;
+    background-image:none !important;
+  }
+
+  .email-container {
+    width:600px !important;
+    min-width:600px !important;
+    max-width:600px !important;
+    margin:0 auto !important;
+  }
+
+  .email-background {
+    background-color:transparent !important;
+    background-image:url('https://cdn.playasballs.com/images/pledoo/mail/Pledoo_Background.png') !important;
+    background-repeat:no-repeat !important;
+    background-position:top center !important;
+    background-size:cover !important;
+  }
+
+  .hero-card {
+    width:310px !important;
+    max-width:310px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    background-color:transparent !important;
+  }
+
+  .compact-left-block,
+  .mobile-left-lock,
+  .bonus-label-table {
+    width:400px !important;
+    max-width:400px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    background-color:transparent !important;
+  }
+
+  .left-lock-outer {
+    padding-left:40px !important;
+    padding-right:0 !important;
+    text-align:left !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .left-lock-outer,
+    .compact-left-block,
+    .mobile-left-lock {
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+  }
+
+  u + .body .left-lock-outer,
+  #MessageViewBody .left-lock-outer {
+    padding-left:40px !important;
+    padding-right:0 !important;
+    text-align:left !important;
+  }
+
+  u + .body .compact-left-block,
+  u + .body .mobile-left-lock,
+  #MessageViewBody .compact-left-block,
+  #MessageViewBody .mobile-left-lock {
+    width:400px !important;
+    max-width:400px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .bonus-label-table {
+    width:400px !important;
+    max-width:400px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .bonus-label-text {
+    text-align:center !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .bonus-label-table {
+      width:400px !important;
+      max-width:400px !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+
+    .bonus-label-text {
+      text-align:center !important;
+    }
+  }
+
+  u + .body .bonus-label-text,
+  #MessageViewBody .bonus-label-text {
+    text-align:center !important;
+  }
+
+  .small-centered-info-wrap,
+  .small-centered-info-outer {
+    width:320px !important;
+    max-width:320px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .small-centered-info-wrap,
+    .small-centered-info-outer {
+      width:320px !important;
+      max-width:320px !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+  }
+
+  u + .body .small-centered-info-wrap,
+  u + .body .small-centered-info-outer,
+  #MessageViewBody .small-centered-info-wrap,
+  #MessageViewBody .small-centered-info-outer {
+    width:320px !important;
+    max-width:320px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .wide-info-wrap,
+  .wide-info-outer,
+  .short-info-block {
+    width:520px !important;
+    max-width:520px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .wide-info-align-outer {
+    padding-left:40px !important;
+    padding-right:0 !important;
+    text-align:left !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .wide-info-align-outer,
+    .wide-info-wrap,
+    .wide-info-outer,
+    .short-info-block {
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+  }
+
+  u + .body .wide-info-align-outer,
+  #MessageViewBody .wide-info-align-outer {
+    padding-left:40px !important;
+    padding-right:0 !important;
+    text-align:left !important;
+  }
+
+  u + .body .wide-info-wrap,
+  u + .body .wide-info-outer,
+  u + .body .short-info-block,
+  #MessageViewBody .wide-info-wrap,
+  #MessageViewBody .wide-info-outer,
+  #MessageViewBody .short-info-block {
+    width:520px !important;
+    max-width:520px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .hero-pledoo-logo {
+    display:block !important;
+    width:180px !important;
+    max-width:180px !important;
+    height:auto !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .hero-pledoo-logo {
+      display:block !important;
+      width:180px !important;
+      max-width:180px !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+  }
+
+  u + .body .hero-pledoo-logo,
+  #MessageViewBody .hero-pledoo-logo {
+    display:block !important;
+    width:180px !important;
+    max-width:180px !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
+
+  .hero-logo-shift-wrap {
+    width:200px !important;
+    max-width:200px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  .hero-logo-shift-wrap .hero-pledoo-logo {
+    display:block !important;
+    width:180px !important;
+    max-width:180px !important;
+    height:auto !important;
+    margin:0 !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .hero-logo-shift-wrap {
+      width:200px !important;
+      max-width:200px !important;
+      margin-left:auto !important;
+      margin-right:auto !important;
+    }
+  }
+
+  u + .body .hero-logo-shift-wrap,
+  #MessageViewBody .hero-logo-shift-wrap {
+    width:200px !important;
+    max-width:200px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  
+  
+  /* 50% transparent large blocks - fixed inner cells too */
+  .translucent-panel,
+  .translucent-panel > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  .translucent-inner,
+  .translucent-inner > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .translucent-panel,
+    .translucent-panel > tbody > tr > td {
+      background-color:rgba(17, 19, 24, 0.50) !important;
+    }
+
+    .translucent-inner,
+    .translucent-inner > tbody > tr > td {
+      background-color:rgba(17, 19, 24, 0.50) !important;
+    }
+  }
+
+  u + .body .translucent-panel,
+  u + .body .translucent-panel > tbody > tr > td,
+  #MessageViewBody .translucent-panel,
+  #MessageViewBody .translucent-panel > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  u + .body .translucent-inner,
+  u + .body .translucent-inner > tbody > tr > td,
+  #MessageViewBody .translucent-inner,
+  #MessageViewBody .translucent-inner > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  /* Make only the top Coral / Sticky bonus block more transparent */
+  .top-bonus-more-transparent,
+  .top-bonus-more-transparent > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.22) !important;
+    background-image:none !important;
+  }
+
+  .top-bonus-inner-more-transparent,
+  .top-bonus-inner-more-transparent > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.18) !important;
+    background-image:none !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .top-bonus-more-transparent,
+    .top-bonus-more-transparent > tbody > tr > td {
+      background-color:rgba(17, 19, 24, 0.22) !important;
+    }
+
+    .top-bonus-inner-more-transparent,
+    .top-bonus-inner-more-transparent > tbody > tr > td {
+      background-color:rgba(17, 19, 24, 0.18) !important;
+    }
+  }
+
+  u + .body .top-bonus-more-transparent,
+  u + .body .top-bonus-more-transparent > tbody > tr > td,
+  #MessageViewBody .top-bonus-more-transparent,
+  #MessageViewBody .top-bonus-more-transparent > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.22) !important;
+    background-image:none !important;
+  }
+
+  u + .body .top-bonus-inner-more-transparent,
+  u + .body .top-bonus-inner-more-transparent > tbody > tr > td,
+  #MessageViewBody .top-bonus-inner-more-transparent,
+  #MessageViewBody .top-bonus-inner-more-transparent > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.18) !important;
+    background-image:none !important;
+  }
+
+  /* Prevent rectangular fill from showing outside the rounded top bonus block */
+  .clean-rounded-bonus-wrapper,
+  .clean-rounded-bonus-wrapper > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  .clean-rounded-bonus-wrapper {
+    border-radius:18px !important;
+    overflow:hidden !important;
+    border-collapse:separate !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .clean-rounded-bonus-wrapper,
+    .clean-rounded-bonus-wrapper > tbody > tr > td {
+      background-color:transparent !important;
+      background-image:none !important;
+    }
+  }
+
+  u + .body .clean-rounded-bonus-wrapper,
+  u + .body .clean-rounded-bonus-wrapper > tbody > tr > td,
+  #MessageViewBody .clean-rounded-bonus-wrapper,
+  #MessageViewBody .clean-rounded-bonus-wrapper > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  /* Remove the square fill outside the rounded bonus block */
+  .compact-left-block,
+  .compact-left-block > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  .rounded-bonus-glass {
+    background-color:rgba(17, 19, 24, 0.22) !important;
+    background-image:none !important;
+    border-radius:18px !important;
+    border-collapse:separate !important;
+    overflow:hidden !important;
+  }
+
+  .rounded-bonus-glass > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+    border-radius:16px !important;
+    overflow:hidden !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .compact-left-block,
+    .compact-left-block > tbody > tr > td {
+      background-color:transparent !important;
+      background-image:none !important;
+    }
+
+    .rounded-bonus-glass {
+      background-color:rgba(17, 19, 24, 0.22) !important;
+      border-radius:18px !important;
+      overflow:hidden !important;
+    }
+  }
+
+  u + .body .compact-left-block,
+  u + .body .compact-left-block > tbody > tr > td,
+  #MessageViewBody .compact-left-block,
+  #MessageViewBody .compact-left-block > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  u + .body .rounded-bonus-glass,
+  #MessageViewBody .rounded-bonus-glass {
+    background-color:rgba(17, 19, 24, 0.22) !important;
+    border-radius:18px !important;
+    overflow:hidden !important;
+  }
+
+  /* Final upper-block transparency: match the lower information panel */
+  .upper-matching-glass,
+  .upper-matching-glass > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  .upper-matching-glass {
+    border-radius:18px !important;
+    border-collapse:separate !important;
+    overflow:hidden !important;
+  }
+
+  .upper-transparent-inner,
+  .upper-transparent-inner > tbody > tr > td,
+  .upper-transparent-inner table,
+  .upper-transparent-inner table td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  .upper-transparent-inner td[bgcolor="#4471e3"] {
+    background-color:#4471e3 !important;
+  }
+
+  .compact-left-block,
+  .compact-left-block > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .upper-matching-glass,
+    .upper-matching-glass > tbody > tr > td {
+      background-color:rgba(17, 19, 24, 0.50) !important;
+    }
+
+    .upper-transparent-inner,
+    .upper-transparent-inner > tbody > tr > td,
+    .upper-transparent-inner table,
+    .upper-transparent-inner table td {
+      background-color:transparent !important;
+    }
+  }
+
+  u + .body .upper-matching-glass,
+  u + .body .upper-matching-glass > tbody > tr > td,
+  #MessageViewBody .upper-matching-glass,
+  #MessageViewBody .upper-matching-glass > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  u + .body .upper-transparent-inner,
+  u + .body .upper-transparent-inner > tbody > tr > td,
+  #MessageViewBody .upper-transparent-inner,
+  #MessageViewBody .upper-transparent-inner > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+
+  /* Gmail-safe bottom info block transparency fix */
+  .wide-info-outer,
+  .wide-info-outer > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  @media only screen and (max-width:640px) {
+    .wide-info-outer,
+    .wide-info-outer > tbody > tr > td {
+      background-color:rgba(17, 19, 24, 0.50) !important;
+      background-image:none !important;
+    }
+  }
+
+  u + .body .wide-info-outer,
+  u + .body .wide-info-outer > tbody > tr > td,
+  #MessageViewBody .wide-info-outer,
+  #MessageViewBody .wide-info-outer > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  /* Final Pledoo brand overrides */
+  body,
+  .outer-wrapper {
+    background-color:#000000 !important;
+  }
+
+  .email-background {
+    background-image:url('https://cdn.playasballs.com/images/pledoo/mail/Pledoo_Background.png') !important;
+  }
+
+  .upper-matching-glass,
+  .upper-matching-glass > tbody > tr > td,
+  .wide-info-outer,
+  .wide-info-outer > tbody > tr > td {
+    background-color:rgba(17, 19, 24, 0.50) !important;
+    background-image:none !important;
+  }
+
+  .upper-transparent-inner,
+  .upper-transparent-inner > tbody > tr > td,
+  .upper-transparent-inner table,
+  .upper-transparent-inner table td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  .compact-left-block,
+  .compact-left-block > tbody > tr > td {
+    background-color:transparent !important;
+    background-image:none !important;
+  }
+
+  .hero-pledoo-logo {
+    display:block !important;
+    width:180px !important;
+    max-width:180px !important;
+    height:auto !important;
+    margin:0 !important;
+    background-color:transparent !important;
+  }
+
+  .hero-logo-shift-wrap {
+    width:200px !important;
+    max-width:200px !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  td[bgcolor="#4471e3"] {
+    background-color:#4471e3 !important;
+  }
+</style>
+</head>
+<body class="body" style="margin:0; padding:0; background-color:#000000;">
+<table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" class="outer-wrapper" role="presentation" style="width:100%; background-color:#000000;" width="100%">
+<tr>
+<td align="center" style="padding:20px 0;" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:200px; max-width:200px; margin:0 auto; border-collapse:collapse;" width="200">
+<tr>
+<td align="center" style="padding:0 0 18px 0; text-align:center;" valign="middle">
+<img alt="Pledoo Logo" class="hero-pledoo-logo" src="data:image/png;base64,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" style="display:block; width:180px; max-width:180px; height:auto; margin:0; border:0; outline:none; text-decoration:none; background-color:transparent;" width="180"/>
+</td>
+</tr>
+</table>
+<!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+        <v:fill type="frame" src="https://cdn.playasballs.com/images/pledoo/mail/Pledoo_Background.png"/>
+        <v:textbox inset="0,0,0,0">
+      <![endif]-->
+<table background="https://cdn.playasballs.com/images/pledoo/mail/Pledoo_Background.png" border="0" cellpadding="0" cellspacing="0" class="email-container email-background" role="presentation" style="width:600px; min-width:600px; max-width:600px; margin:0 auto; background-color:transparent; background-image:url('https://cdn.playasballs.com/images/pledoo/mail/Pledoo_Background.png'); background-repeat:no-repeat; background-position:top center; background-size:cover; border-radius:18px; border-collapse:separate; overflow:hidden;" width="600">
+<!-- ==========================================================
+             1. LOGO
+             Change the image URL in src="..."
+             Change the logo link in href="..."
+             ========================================================== -->
+<!-- ==========================================================
+             2. HERO HEADLINE
+             Edit headline text and colors here.
+             ========================================================== -->
+<tr>
+<td align="center" style="padding:10px 0 18px 0; background-color:transparent;" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" class="hero-card" role="presentation" style="width:310px; max-width:310px; margin:0 auto;" width="310">
+<tr>
+<td align="center" style="padding:10px 14px 10px 14px; background-color:transparent; text-align:center;">
+<p class="hero-top" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:24px; line-height:27px; font-weight:bold; color:#4471e3; letter-spacing:1px; text-transform:uppercase;">FEEL THE THRILL</p>
+<p class="hero-bottom" style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:18px; font-weight:bold; color:#4471e3; letter-spacing:1px; text-transform:uppercase;">PLAY YOUR WAY</p>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; margin:8px 0 0 0;" width="100%"><tr><td style="font-size:0; line-height:0; border-top:2px solid #4471e3;"> </td></tr></table>
+</td>
+</tr>
+<!--[if gte mso 9]>
+        </v:textbox>
+      </v:rect>
+      <![endif]-->
+</table>
+</td>
+</tr>
+<!-- ==========================================================
+             3. BONUS PROMO CARD
+             Edit percentage, maximum amount, free spins, game name,
+             CTA text and CTA link in this section.
+             ========================================================== -->
+<tr>
+<td align="center" class="left-lock-outer" style="padding:0 40px 24px 40px; background-color:transparent; text-align:center;" valign="top">
+<table align="center" border="0" cellpadding="0" cellspacing="0" class="compact-left-block mobile-left-lock" role="presentation" style="width:520px; max-width:520px; margin:0 auto; background-color:transparent;" width="520">
+<!-- label -->
+<tr>
+<td align="center" style="padding:0 0 12px 0; text-align:center; background-color:transparent;" valign="middle">
+<p style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:1; font-weight:bold; color:#4471e3; text-transform:uppercase; letter-spacing:0.4px; text-align:center;">
+                CHOOSE THE BONUS
+              </p>
+</td>
+</tr>
+<!-- single compact outer card -->
+<tr>
+<td align="center" style="padding:0; background-color:transparent;">
+<table border="0" cellpadding="0" cellspacing="0" class="upper-matching-glass" role="presentation" style="width:520px; max-width:520px; 
+                        border:2px solid #8fb0ff; 
+                        border-collapse:separate;        background-color:rgba(17, 19, 24, 0.50); border-radius:18px; overflow:hidden; border-collapse:separate; background-color:rgba(17, 19, 24, 0.50);" width="520">
+<tr>
+<td align="center" style="padding:14px 14px 12px 14px; 
+                         border-radius:18px 18px 0 0; background-color:rgba(17, 19, 24, 0.50);">
+<!-- option 1 -->
+<table border="0" cellpadding="0" cellspacing="0" class="upper-transparent-inner" role="presentation" style="width:100%; 
+                              border:1px solid #8fb0ff; border-radius:14px;
+                              border-collapse:separate; overflow:hidden; background-color:transparent;" width="100%">
+<tr>
+<td align="left" style="padding:12px 12px 10px 12px; background-color:transparent;" valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<td align="left" style="padding:0 10px 0 0; background-color:transparent;" valign="top">
+<div style="font-family:Arial, Helvetica, sans-serif;
+                                        font-size:12px; line-height:15px; font-weight:bold;
+                                        color:#d9d9d9; text-transform:uppercase;">
+                              TURNOVER BOOST
+                            </div>
+<div style="margin-top:4px; font-family:Arial, Helvetica, sans-serif;
+                                        font-size:34px; line-height:34px; font-weight:bold;
+                                        color:#4471e3; letter-spacing:-1px;">
+                              200%
+                            </div>
+<div style="margin-top:2px; font-family:Arial, Helvetica, sans-serif;
+                                        font-size:13px; line-height:17px; font-weight:bold;
+                                        color:#f0f1f4;">
+                              Up to €200 <span style="color:#4471e3;">+</span> 100 FS
+                            </div><div style="margin-top:2px; font-family:Arial, Helvetica, sans-serif;
+            font-size:11px; line-height:14px; font-weight:normal;
+            color:#d9d9d9; text-transform:uppercase;">
+  Min Dep: €20
+</div>
+</td>
+<td align="right" style="width:124px; background-color:transparent;" valign="middle" width="124">
+<a href="https://pledoo.com" style="display:block; text-decoration:none;" target="_blank">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:124px; border-radius:12px; border-collapse:separate; overflow:hidden;" width="124">
+<tr>
+<td align="center" bgcolor="#4471e3" style="background-color:#4471e3; border:2px solid #8fb0ff;
+                                             border-radius:12px; overflow:hidden; mso-padding-alt:10px 8px;">
+<span style="display:block; padding:10px 8px;
+                                                 font-family:Arial, Helvetica, sans-serif;
+                                                 font-size:12px; line-height:14px; font-weight:bold;
+                                                 color:#111318; text-transform:uppercase;">
+                                      Get 200%
+                                    </span>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr><td style="height:10px; line-height:10px; font-size:0;"> </td></tr>
+</table>
+<!-- option 2 -->
+<table border="0" cellpadding="0" cellspacing="0" class="upper-transparent-inner" role="presentation" style="width:100%; 
+                              border:1px solid #8fb0ff; border-radius:14px;
+                              border-collapse:separate; overflow:hidden; background-color:transparent;" width="100%">
+<tr>
+<td align="left" style="padding:12px 12px 10px 12px; background-color:transparent;" valign="middle">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+<tr>
+<td align="left" style="padding:0 10px 0 0; background-color:transparent;" valign="top">
+<div style="font-family:Arial, Helvetica, sans-serif;
+                                        font-size:12px; line-height:15px; font-weight:bold;
+                                        color:#d9d9d9; text-transform:uppercase;">
+                              STICKY BONUS
+                            </div>
+<div style="margin-top:4px; font-family:Arial, Helvetica, sans-serif;
+                                        font-size:34px; line-height:34px; font-weight:bold;
+                                        color:#4471e3; letter-spacing:-1px;">
+                              150%
+                            </div>
+<div style="margin-top:2px; font-family:Arial, Helvetica, sans-serif;
+                                        font-size:13px; line-height:17px; font-weight:bold;
+                                        color:#f0f1f4;">
+                              Up to €200 <span style="color:#4471e3;">+</span> 50 FS
+                            </div><div style="margin-top:2px; font-family:Arial, Helvetica, sans-serif;
+                font-size:11px; line-height:14px; font-weight:normal;
+                color:#d9d9d9; text-transform:uppercase;">
+      Min Dep: €20
+    </div>
+</td>
+<td align="right" style="width:124px; background-color:transparent;" valign="middle" width="124">
+<a href="https://pledoo.com" style="display:block; text-decoration:none;" target="_blank">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:124px; border-radius:12px; border-collapse:separate; overflow:hidden;" width="124">
+<tr>
+<td align="center" bgcolor="#4471e3" style="background-color:#4471e3; border:2px solid #8fb0ff;
+                                             border-radius:12px; overflow:hidden; mso-padding-alt:10px 8px;">
+<span style="display:block; padding:10px 8px;
+                                                 font-family:Arial, Helvetica, sans-serif;
+                                                 font-size:12px; line-height:14px; font-weight:bold;
+                                                 color:#111318; text-transform:uppercase;">
+                                      Get 150%
+                                    </span>
+</td>
+</tr>
+</table>
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- ==========================================================
+             4–5. BONUS INFORMATION BLOCKS
+             Edit deposit details, game names and bonus explanation text here.
+             ========================================================== -->
+<tr>
+<td align="left" class="wide-info-align-outer" style="padding:0 0 18px 40px; background-color:transparent; text-align:left;" valign="top">
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="wide-info-wrap" role="presentation" style="width:520px; max-width:520px; margin:0; background-color:transparent;" width="520">
+<tr>
+<td align="center" style="padding:0; background-color:transparent; text-align:center;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="wide-info-outer short-info-block fully-transparent-panel translucent-panel" role="presentation" style="width:520px; max-width:520px; 
+                        border:2px solid #8fb0ff; border-radius:18px;
+                        border-collapse:separate; overflow:hidden; background-color:rgba(17, 19, 24, 0.50); background-image:none;" width="520">
+<tr>
+<td align="left" style="padding:12px 14px; background-color:rgba(17, 19, 24, 0.50); background-image:none; border-radius:16px;" valign="top">
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; border-collapse:separate; border-spacing:0;" width="100%">
+<tr>
+<!-- TURNOVER BOOSTS -->
+<td align="left" style="width:238px; padding:0 12px 0 0;" valign="top" width="238">
+<div style="font-family:Arial, Helvetica, sans-serif;
+                                  font-size:10px; line-height:19px; font-weight:normal;
+                                  color:#f0f1f4; text-align:center; margin:0 0 7px 0;">
+                        Turnover Boosts:
+                      </div>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; margin:0 0 7px 0;" width="100%">
+<tr>
+<td style="font-size:0; line-height:0;
+                                     border-top:1px solid #4471e3;"> </td>
+</tr>
+</table>
+<div style="font-family:Arial, Helvetica, sans-serif;
+                                  font-size:10px; line-height:16px; color:#f0f1f4;
+                                  text-align:left; margin:0;">
+<strong style="color:#f0f1f4;">Turnover:</strong>
+                        Play using the real balance. For every 10% of wagering completed,
+                        receive 10% of real balance.
+                      </div>
+</td>
+<!-- CENTER DIVIDER -->
+<td bgcolor="#8fb0ff" style="width:2px; background-color:#8fb0ff;
+                               font-size:0; line-height:0;" width="2"> </td>
+<!-- STICKY BONUS -->
+<td align="left" style="width:238px; padding:0 0 0 12px;" valign="top" width="238">
+<div style="font-family:Arial, Helvetica, sans-serif;
+                                  font-size:10px; line-height:19px; font-weight:normal;
+                                  color:#f0f1f4; text-align:center; margin:0 0 7px 0;">
+                        Sticky Bonus:
+                      </div>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; margin:0 0 7px 0;" width="100%">
+<tr>
+<td style="font-size:0; line-height:0;
+                                     border-top:1px solid #4471e3;"> </td>
+</tr>
+</table>
+<div style="font-family:Arial, Helvetica, sans-serif;
+                                  font-size:10px; line-height:16px; color:#f0f1f4;
+                                  text-align:left; margin:0;">
+<strong style="color:#f0f1f4;">Sticky Bonus:</strong>
+                        Receive the full bonus and play using the Bonus balance until
+                        the wagering requirements are met.
+                      </div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Footer -->
+<tr>
+<td align="center" bgcolor="#111318" class="footer-padding" style="padding:20px 28px 26px 28px; background-color:#111318; border-top:1px solid #8fb0ff; border-radius:0; overflow:hidden;">
+<p style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:16px; color:#d9d9d9; text-align:center;"><a href="{{ system.url.unsubscribe }}" style="color:#4471e3; text-decoration:underline; font-weight:bold;">Adjust Preferences</a></p>
+<p style="margin:10px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:15px; color:#d9d9d9; text-align:center;">The Website is owned by JER-TEAM N.V., registration no.160979, registered address is at Schottegatweg Oost Unit 1-9, Bon Bini Business Center, Curacao, license no. OGL/2024/600/0262. All payment procedures are operated by JER-TEAM LIMITED, Avlonos 1, MARIA HOUSE, 1075, Nicosia, Cyprus.</p>
+<p style="margin:10px 0 0 0; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:15px; color:#d9d9d9; text-align:center;">© 2026 Pledoo. All rights reserved.</p>
+</td>
+</tr>
+<!-- Bottom honey accent -->
+<tr>
+<td bgcolor="#4471e3" height="10" style="height:10px; line-height:10px; font-size:0; background-color:#4471e3;"> </td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

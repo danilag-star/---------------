@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welle Email Template</title>
+    <style>
+        /* === ИЗМЕНИТЬ ЦВЕТА ФОНА ЗДЕСЬ / CHANGE BACKGROUND COLORS HERE === */
+        .email-outer-bg {
+            background-color: #021222 !important; /* Внешний фон (боковые поля) / Outer background (sides) */
+        }
+        .email-content-bg {
+            background-color: #042444 !important; /* Фон контента (середина) / Content background (middle) */
+        }
+
+        /* CSS resets for email clients */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            border-collapse: collapse !important;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        body,
+        table,
+        td,
+        p,
+        a {
+            font-family: Verdana, Tahoma, sans-serif;
+        }
+
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Mobile responsive styles */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .stack-column {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+                box-sizing: border-box !important;
+                margin-bottom: 20px !important;
+            }
+
+            .stack-spacer {
+                display: none !important;
+            }
+
+            .button-wrapper {
+                width: 100% !important;
+                display: block !important;
+            }
+
+            .responsive-padding {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="email-outer-bg"
+    style="background-color: #021222; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+
+    <!-- Main wrapper table -->
+    <table class="email-outer-bg" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#021222"
+        style="background-color: #021222;">
+        <tr>
+            <td align="center" valign="top" style="padding: 20px 0;">
+
+                <!-- Email Container Table (Max-width 600px) -->
+                <table class="email-container email-content-bg" width="600" border="0" cellpadding="0" cellspacing="0"
+                    style="width: 600px; margin: 0 auto; background-color: #042444;">
+
+
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 2: HEADER LOGO                                                   -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td align="center" valign="top" style="padding: 4px 20px;">
+                            <!-- [PLACEHOLDER: BRAND LOGO URL] -->
+                            <a href="https://welle.top" target="_blank">
+                                <img src="https://cdn.chipychapa.com/welle/General_site/Logo_n_favicon/welle_logo_gti.png"
+                                    alt="Welle Logo" width="180"
+                                    style="display: block; border: 0; width: 180px; max-width: 100%; height: auto;" />
+                                <!-- [INSERT LINK TO YOUR UPLOADED LOGO IN src ABOVE] -->
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: HEADER LOGO                                              -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 3: HERO BANNER / MASCOT                                          -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td align="center" valign="top" style="padding: 0 0 20px 0;">
+                            <!-- [PLACEHOLDER: HERO BANNER IMAGE URL] -->
+                            <a href="https://welle.top" target="_blank">
+                                <img src="https://placehold.co/600x300/092635/bde3fa?text=Mermaid+Undersea+Banner"
+                                    alt="Welle Mascot Banner" width="600"
+                                    style="display: block; border: 0; width: 600px; max-width: 100%; height: auto;" />
+                                <!-- [INSERT LINK TO YOUR UPLOADED HERO IMAGE IN src ABOVE] -->
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: HERO BANNER                                              -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 4: HEADLINE AND TEXT (Verdana Font)                              -->
+                    <!-- Accent Bold rules: no more than 5 consecutive words emphasized         -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td class="responsive-padding" align="left" valign="top"
+                            style="padding: 20px 30px; font-family: Verdana, Tahoma, sans-serif;">
+                            <h1
+                                style="margin: 0 0 15px 0; font-size: 24px; font-weight: bold; color: #ffffff; line-height: 30px; text-align: center;">
+                                Hello, FishFishFish
+                            </h1>
+
+                            <p
+                                style="margin: 0 0 15px 0; font-size: 15px; font-weight: normal; color: #bde3fa; line-height: 22px; text-align: center;">
+                                <strong style="color: #ffffff;">We have news</strong> — more spins, more fun!
+                                Top up your deposit using the link below and dive into the world of games. There are
+                                many <strong style="color: #ffffff;">new exciting games</strong> on our website — come
+                                and try them!
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: HEADLINE AND TEXT                                        -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 5: PRIMARY CTA BUTTON (12px corners, Light blue #44b9f3)          -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td align="center" valign="top" style="padding: 15px 20px 25px 20px;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                                <tr>
+                                    <td align="center" bgcolor="#44b9f3"
+                                        style="background-color: #44b9f3; border-radius: 12px; mso-padding-alt: 15px 35px;">
+                                        <a href="https://welle.top" target="_blank"
+                                            style="font-family: Verdana, Tahoma, sans-serif; font-size: 16px; font-weight: bold; color: #042444; text-decoration: none; display: block; padding: 15px 35px; border-radius: 12px;">
+                                            Check Out New Games
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: PRIMARY CTA BUTTON                                       -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 6: 2-COLUMN GRID (Equal Height Cards Layout)                      -->
+                    <!-- bgcolor and border-radius are applied directly to td cells for desktop height matching -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td class="responsive-padding" align="center" valign="top"
+                            style="padding: 20px 30px 20px 30px;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <!-- Left Column Block -->
+                                    <td class="stack-column" width="260" valign="top" bgcolor="#092635"
+                                        style="width: 260px; background-color: #092635; border-radius: 12px; box-sizing: border-box; mso-padding-alt: 15px;">
+                                        <a href="https://welle.top" target="_blank" style="text-decoration: none; display: block; padding: 15px; border-radius: 12px; color: #ffffff;">
+                                            <!-- Feature Image 1 -->
+                                            <div style="margin-bottom: 12px;">
+                                                <img src="https://placehold.co/230x130/042444/44b9f3?text=Bubble+Bonus"
+                                                    alt="Bubble Bonus" width="230"
+                                                    style="display: block; border: 0; width: 100%; max-width: 100%; height: auto; border-radius: 8px;" />
+                                                <!-- [INSERT LINK TO UPLOADED FEATURE 1 IMAGE IN src ABOVE] -->
+                                            </div>
+                                            <div style="font-family: Verdana, Tahoma, sans-serif; text-align: left;">
+                                                <h3
+                                                    style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #ffffff;">
+                                                    30 Free Spins</h3>
+                                                <p style="margin: 0; font-size: 13px; color: #bde3fa; opacity: 0.8; line-height: 18px;">
+                                                    We have prepared a special package of free spins for you!
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </td>
+
+                                    <!-- Spacer column (Hidden on mobile) -->
+                                    <td class="stack-spacer" width="20"
+                                        style="width: 20px; font-size: 0; line-height: 0;">&nbsp;</td>
+
+                                    <!-- Right Column Block -->
+                                    <td class="stack-column" width="260" valign="top" bgcolor="#092635"
+                                        style="width: 260px; background-color: #092635; border-radius: 12px; box-sizing: border-box; mso-padding-alt: 15px;">
+                                        <a href="https://welle.top" target="_blank" style="text-decoration: none; display: block; padding: 15px; border-radius: 12px; color: #ffffff;">
+                                            <!-- Feature Image 2 -->
+                                            <div style="margin-bottom: 12px;">
+                                                <img src="https://cdn.playasballs.com/welle/Emails/content/games/ChatGPT_Image_18_%D0%B8%D1%8E%D0%BD._2026_%D0%B3.__10_28_26__2_.png"
+                                                    alt="Corals" width="230"
+                                                    style="display: block; border: 0; width: 100%; max-width: 100%; height: auto; border-radius: 8px;" />
+                                                <!-- [INSERT LINK TO UPLOADED FEATURE 2 IMAGE IN src ABOVE] -->
+                                            </div>
+                                            <div style="font-family: Verdana, Tahoma, sans-serif; text-align: left;">
+                                                <h3
+                                                    style="margin: 0 0 10px 0; font-size: 16px; font-weight: bold; color: #ffffff;">
+                                                    Favorite Games</h3>
+                                                <p style="margin: 0; font-size: 13px; color: #bde3fa; opacity: 0.8; line-height: 18px;">
+                                                    Enjoy your favorite games with the best conditions online.
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: 2-COLUMN GRID                                            -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 7: SECONDARY CTA BUTTON (12px corners, Outline border)           -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td align="center" valign="top" style="padding: 15px 20px 30px 20px;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin: 0 auto;">
+                                <tr>
+                                    <td align="center"
+                                        style="border: 2px solid #44b9f3; background-color: transparent; mso-padding-alt: 13px 33px; border-radius: 12px;">
+                                        <a href="https://welle.top" target="_blank"
+                                            style="font-family: Verdana, Tahoma, sans-serif; font-size: 16px; font-weight: bold; color: #44b9f3; text-decoration: none; display: block; padding: 13px 33px; border-radius: 12px;">
+                                            Claim Your Spins
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: SECONDARY CTA BUTTON                                     -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 8: SOCIAL MEDIA LINKS (Telegram, Instagram, Facebook)            -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td align="center" valign="top" style="padding: 20px; border-top: 1px solid #092635;">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="156"
+                                style="width: 156px; margin: 0 auto;">
+                                <tr>
+                                    <!-- Telegram -->
+                                    <td style="padding: 0 10px;">
+                                        <a href="https://t.me/+IX3Igpe18lcwZDBk" target="_blank">
+                                            <img src="https://cdn.chipychapa.com//welle/Emails/Social_media/Telegram.png"
+                                                alt="Telegram" width="32" height="32"
+                                                style="display: block; border: 0; width: 32px; height: 32px;" />
+                                            <!-- [INSERT LINK TO TELEGRAM ICON IN src ABOVE] -->
+                                        </a>
+                                    </td>
+                                    <!-- Instagram -->
+                                    <td style="padding: 0 10px;">
+                                        <a href="https://www.instagram.com/welleclub?igsh=bHZkdXpiOXB3cGFl"
+                                            target="_blank">
+                                            <img src="https://cdn.chipychapa.com//welle/Emails/Social_media/Instagram.png"
+                                                alt="Instagram" width="32" height="32"
+                                                style="display: block; border: 0; width: 32px; height: 32px;" />
+                                            <!-- [INSERT LINK TO INSTAGRAM ICON IN src ABOVE] -->
+                                        </a>
+                                    </td>
+                                    <!-- Facebook -->
+                                    <td style="padding: 0 10px;">
+                                        <a href="https://www.facebook.com/welleclick" target="_blank">
+                                            <img src="https://cdn.chipychapa.com//welle/Emails/Social_media/Facebook.png"
+                                                alt="Facebook" width="32" height="32"
+                                                style="display: block; border: 0; width: 32px; height: 32px;" />
+                                            <!-- [INSERT LINK TO FACEBOOK ICON IN src ABOVE] -->
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: SOCIAL MEDIA LINKS                                       -->
+                    <!-- ====================================================================== -->
+
+
+                    <!-- ====================================================================== -->
+                    <!-- BLOCK 9: FOOTER (Bg color #092635)                                     -->
+                    <!-- ====================================================================== -->
+                    <tr>
+                        <td align="center" valign="top" bgcolor="#092635"
+                            style="background-color: #092635; padding: 30px 20px; font-family: Verdana, Tahoma, sans-serif; font-size: 11px; color: #bde3fa; line-height: 16px;">
+                            <p style="margin: 0 0 10px 0;">
+                                The Website is owned by JER-TEAM N.V., registration no.160979, registered address is at
+                                Schottegatweg Oost Unit 1-9, Bon Bini Business Center, Curacao, license no.
+                                OGL/2024/600/0262. All payment procedures are operated by JER-TEAM LIMITED Avlonos 1,
+                                MARIA HOUSE, 1075, Nicosia, Cyprus.
+                            </p>
+                            <p style="margin: 0;">
+                                <a href="{{ system.url.unsubscribe }}"
+                                    style="color: #44b9f3; text-decoration: underline; font-weight: bold;">Adjust
+                                    Preferences</a>
+                            </p>
+                            <p style="margin: 0 0 15px 0;">
+                                &copy; 2026 Welle. All rights reserved.
+                            </p>
+                        </td>
+                    </tr>
+                    <!-- ====================================================================== -->
+                    <!-- END OF BLOCK: FOOTER                                                   -->
+                    <!-- ====================================================================== -->
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
