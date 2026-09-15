@@ -28,30 +28,8 @@
       margin: 0;
       padding: 0;
     }
-    @media only screen and (max-width: 620px) {
-      .email-container {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-      .mobile-padding {
-        padding-left: 18px !important;
-        padding-right: 18px !important;
-      }
-      .mobile-headline {
-        font-size: 30px !important;
-        line-height: 36px !important;
-      }
-      .mobile-amount {
-        font-size: 32px !important;
-        line-height: 38px !important;
-      }
-      .mobile-button {
-        width: 100% !important;
-      }
-      .mobile-button a {
-        display: block !important;
-      }
-    }
+    /* Preserve desktop proportions on mobile email clients. */
+    .email-container { width:600px !important; min-width:600px !important; max-width:600px !important; }
   </style>
 </head>
 <body style="margin:0; padding:0; background-color:#ffffff;">
@@ -59,7 +37,7 @@
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="width:100%; background-color:#ffffff;">
       <tr>
         <td align="center" style="padding:24px 12px 30px 12px;">
-          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="email-container" bgcolor="#ffffff" style="width:600px; max-width:600px; background-color:#ffffff;">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="email-container" bgcolor="#ffffff" style="width:600px; min-width:600px; max-width:600px; background-color:#ffffff;">
 
             <!-- Preheader -->
             <tr>
